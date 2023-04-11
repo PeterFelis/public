@@ -1,0 +1,183 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* utility */
+.section {
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.grid2col {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: none;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .grid2col {
+    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.gridcenter {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+}
+
+.img-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+  opacity: 0.5;
+}
+
+/* center text*/
+.tc {
+  text-align: center;
+}
+
+/* center right align*/
+.tr {
+  text-align: right;
+}
+
+/* center left aligh*/
+.tl {
+  text-align: left;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+/* padding horizontaal medium*/
+.phm {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.phl {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* per pagina */
+.index main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.index main .waarschuwing {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 70%;
+  font-size: 1rem;
+}
+.index main .logo {
+  position: absolute;
+  width: 20%;
+  top: 15%;
+  height: 20%;
+  right: 100px;
+}
+
+.leveringsvoorwaarden .coloms {
+  -moz-column-count: 3;
+       column-count: 3;
+}
+
+/*menu*/
+.menu {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+}
+
+.zichtbaar {
+  visibility: hidden;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+  padding: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  transition: border 1s;
+  border-bottom: 1px solid transparent;
+}
+nav a:hover {
+  color: green;
+  border-bottom: 5px solid green;
+}
+
+@media screen and (min-width: 600px) {
+  nav {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+  .zichtbaar {
+    visibility: visible;
+  }
+}/*# sourceMappingURL=css.css.map */
